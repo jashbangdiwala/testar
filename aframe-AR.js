@@ -1881,7 +1881,7 @@ AFRAME.registerComponent('artoolkitmarker', {
 			this.data.patternUrl = THREEx.ArToolkitContext.baseURL+'../data/data/patt.kanji'
 		}else if( this.data.preset === 'mypad' ){
 			this.data.type = 'pattern'
-			this.data.patternUrl = 'https://github.com/jashbangdiwala/testar.github.io/blob/master/mypad.patt'
+			this.data.patternUrl = 'https://raw.githubusercontent.com/jashbangdiwala/testar.github.io/master/mypad.patt'
 		}
 
 
