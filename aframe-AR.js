@@ -1273,7 +1273,7 @@ THREEx.ArToolkitProfile.prototype.mypadMarker = function () {
 	this.contextParameters.detectionMode = 'mono'
 
 	this.defaultMarkerParameters.type = 'pattern'
-	this.defaultMarkerParameters.patternUrl = 'http://cors.io/?u=https://pastebin.com/raw/AYKn4DmJ'
+	this.defaultMarkerParameters.patternUrl = 'https://cors.io/?u=https://pastebin.com/raw/AYKn4DmJ'
 	return this
 }
 
@@ -1881,7 +1881,7 @@ AFRAME.registerComponent('artoolkitmarker', {
 			this.data.patternUrl = THREEx.ArToolkitContext.baseURL+'../data/data/patt.kanji'
 		}else if( this.data.preset === 'mypad' ){
 			this.data.type = 'pattern'
-			this.data.patternUrl = 'http://cors.io/?u=https://pastebin.com/raw/AYKn4DmJ'
+			this.data.patternUrl = 'https://cors.io/?u=https://pastebin.com/raw/AYKn4DmJ'
 		}
 
 
