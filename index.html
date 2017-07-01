@@ -1,20 +1,17 @@
 
 <body bgcolor=white>
+
+<!-- Main aframe link -->
 <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+
+<!-- This is for the marker and stuff, ie the AR.js lib -->
 <script src="https://rawgit.com/jashbangdiwala/testar.github.io/master/aframe-AR.js"></script>
 <!--<script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>-->
 
+<!-- Probaly not going to need this line for we can easily move the threee.js thing to my git repo or something-->
 <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
 
-
-
-<!--<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script> -->
-
-
-
-
-
-
+<!-- This is the actual AR shit -->
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded artoolkit='sourceType: webcam;'>
 		<a-box position='0 0.5 0' material='opacity: 0.9;'></a-box>
