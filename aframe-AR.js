@@ -1268,18 +1268,7 @@ THREEx.ArToolkitProfile.prototype.hiroMarker = function () {
 }
 
 
-//Custom markers!
-THREEx.ArToolkitProfile.prototype.mypadMarker = function () {
-	this.contextParameters.detectionMode = 'mono'
-
-	this.defaultMarkerParameters.type = 'pattern'
-	this.defaultMarkerParameters.patternUrl = 'mypad.patt'
-	
-	return this
-}
-
-
-//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
 //		Source
 //////////////////////////////////////////////////////////////////////////////
 THREEx.ArToolkitProfile.prototype.sourceWebcam = function () {
@@ -1880,10 +1869,7 @@ AFRAME.registerComponent('artoolkitmarker', {
 		}else if( this.data.preset === 'kanji' ){
 			this.data.type = 'pattern'
 			this.data.patternUrl = THREEx.ArToolkitContext.baseURL+'../data/data/patt.kanji'
-		}else if( this.data.preset === 'mypad' ){
-			this.data.type = 'pattern'
-			this.data.patternUrl = '/mypad.patt'
-		
+		}
 		}
 
 

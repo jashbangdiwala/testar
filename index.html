@@ -1,47 +1,8 @@
-
-<body bgcolor=white>
-
-<!-- Main aframe link -->
 <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-
-<!-- This is for the marker and stuff, ie the AR.js lib -->
-<script src="https://raw.githubusercontent.com/jashbangdiwala/testar.github.io/master/aframe-AR.js"></script>
-<!--<script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>-->
-
-<!-- Probaly not going to need this line for we can easily move the threee.js thing to my git repo or something-->
-<script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
-
-<!-- This is the actual AR shit -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
-	<a-scene embedded artoolkit='sourceType: webcam;'>
-		<a-box position='0 0.5 0' material='opacity: 0.9;'></a-box>
-		<a-marker-camera preset='mypad'></a-marker-camera>
-	</a-scene>
+  <a-scene embedded artoolkit='sourceType: webcam;'>
+    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+    <a-marker-camera type='pattern' url='http://127.0.0.1:8000/Desktop/testar/mypad.patt'></a-marker-camera>
+  </a-scene>
 </body>
-
-  </body>
-</html>
-<!-- Augmented Reality on the Web in 10 lines of html! https://github.com/jeromeetienne/ar.js 
-<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
-<script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
-<body style='margin : 0px; overflow: hidden;'>
-	<a-scene embedded artoolkit='sourceType: webcam;'>
-	<a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5" position="0 0.5 0" segments-height="53">
-         <a-animation attribute="scale"
-              dur="1000"
-              from= "1 1 1"
-              to="2 2 2"
-              direction='alternate-reverse'
-              easing= "ease-in-out-circ"     
-              repeat="indefinite"></a-animation>
-     </a-sphere>
-		<a-marker-camera preset='kanji'></a-marker-camera>
-	</a-scene>
-</body>
-
-https://raw.githubusercontent.com/jeromeetienne/ar.js/master/data/data/patt.kanji
-
-https://raw.githubusercontent.com/jashbangdiwala/testar.github.io/master/mypad.patt
-
--->
